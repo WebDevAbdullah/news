@@ -1,0 +1,38 @@
+.article-header {
+  margin-top: 100px;
+
+  .header {
+    &-category {
+      font-size: 20px;
+    }
+    &-title {
+      margin: 30px auto 50px;
+    }
+  }
+}
+
+.article-main {
+  .article-subtitle {
+    margin: 10px 0 30px;
+  }
+  
+  .article-date {
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 22px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    position: relative;
+    margin-right: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 0;
+      width: 15px;
+      height: 57px;
+      color: $main-color;
+      background-color: $main-color;
+    }
+  }
+}

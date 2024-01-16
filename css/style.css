@@ -19,6 +19,7 @@
   margin-bottom: 40px;
   position: relative;
   margin-right: 15px;
+  padding-right: 10px;
 }
 .article-main .article-date::after {
   content: "";
@@ -29,6 +30,33 @@
   height: 57px;
   color: #b80000;
   background-color: #b80000;
+}
+.article-main .article-body p {
+  font-size: 20px;
+}
+.article-main .article-body h3 {
+  font-size: 30px;
+}
+.article-main .article-body .suggested-stories {
+  margin-bottom: 50px;
+}
+.article-main .article-body .suggested-stories .story-card .col-sm-8 {
+  position: relative;
+}
+.article-main .article-body .suggested-stories .story-card .col-sm-8 p {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.article-main .article-body .suggested-stories .story-card:hover .col-sm-8 p {
+  text-decoration: underline;
+  color: #000;
+}
+.article-main .article-body article .keyword {
+  background: #f0f0f0;
+  padding: 12px 30px;
 }
 
 * {

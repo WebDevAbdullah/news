@@ -12,27 +12,73 @@
 }
 
 .article-main {
-  .article-subtitle {
-    margin: 10px 0 30px;
-  }
-  
-  .article-date {
-    background: rgba(0, 0, 0, 0.05);
-    font-size: 22px;
-    padding: 10px 0;
-    margin-bottom: 40px;
-    position: relative;
-    margin-right: 15px;
+  .article {
+    &-subtitle {
+      margin: 10px 0 30px;
+    }
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: -15px;
-      top: 0;
-      width: 15px;
-      height: 57px;
-      color: $main-color;
-      background-color: $main-color;
+    &-date {
+      background: rgba(0, 0, 0, 0.05);
+      font-size: 22px;
+      padding: 10px 0;
+      margin-bottom: 40px;
+      position: relative;
+      margin-right: 15px;
+      padding-right: 10px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 0;
+        width: 15px;
+        height: 57px;
+        color: $main-color;
+        background-color: $main-color;
+      }
+    }
+
+    &-body {
+      p {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+
+      .suggested-stories {
+        margin-bottom: 50px;
+
+        .story-card {
+          .col-sm-8 {
+            position: relative;
+
+            p {
+              font-size: 18px;
+              font-weight: bold;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
+          &:hover {
+            .col-sm-8 {
+              p {
+                text-decoration: underline;
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+
+      article {
+        .keyword {
+          background: #f0f0f0;
+          padding: 12px 30px;
+        }
+      }
     }
   }
 }

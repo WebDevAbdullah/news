@@ -118,6 +118,22 @@ section.comments button:hover {
   color: #b80000;
 }
 
+section.related-articles .button {
+  background-color: #b80000;
+  color: #fff;
+  border: 1px solid #b80000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 25px;
+}
+section.related-articles .button:hover {
+  background-color: #fff;
+  color: #b80000;
+}
+
 * {
   margin: 0;
   padding: 0;

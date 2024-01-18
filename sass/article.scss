@@ -81,6 +81,32 @@
       }
     }
   }
+
+  aside {
+    .article-link {
+      position: relative;
+      display: block;
+
+      &-text {
+        color: $white;
+        position: absolute;
+        right: 0;
+        padding: 3px 12px 3px 0;
+        width: 100%;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+
+        h4 {
+          font-size: 16px;
+        }
+      }
+
+      &:hover h4,
+      &:hover time {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 section.comments {

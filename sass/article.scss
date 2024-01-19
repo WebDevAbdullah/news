@@ -41,9 +41,17 @@
     &-body {
       p {
         font-size: 20px;
+
+        @media (max-width: 575.98px) {
+          font-size: 168x;
+        }
       }
+
       h3 {
         font-size: 30px;
+        @media (max-width: 575.98px) {
+          font-size: 24px;
+        }
       }
 
       .suggested-stories {
@@ -77,6 +85,10 @@
         .keyword {
           background: #f0f0f0;
           padding: 12px 30px;
+
+          @media (max-width: 575.98px) {
+            padding: 8px 20px;
+          }
         }
       }
     }
@@ -153,10 +165,18 @@ section.comments {
           font-size: 20px;
           font-weight: bold;
           margin-bottom: 25px;
+
+          @media (max-width: 575.98px) {
+            font-size: 16px;
+          }
         }
 
         p {
           font-size: 18px;
+
+          @media (max-width: 575.98px) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -174,5 +194,75 @@ section.related-articles {
     @include button($main-color, $white, $main-color);
     font-size: 22px;
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .article-main {
+    .related-articles {
+      .article-title {
+        font-size: 14x;
+      }
+    }
+    aside {
+      .article-link {
+        &-text {
+          h4,
+          time {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .article-header {
+    .header-category {
+      font-size: 16px;
+    }
+
+    .header-title {
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+  .article-main {
+    .related-articles {
+      .article-title {
+        font-size: 18x;
+      }
+    }
+    aside {
+      .article-link {
+        &-text {
+          h4,
+          time {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .article-main {
+    .article {
+      &-body {
+        .suggested-stories {
+          .story-card {
+            .col-sm-8 {
+              p {
+                top: 5px;
+                transform: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
